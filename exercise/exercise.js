@@ -11,32 +11,32 @@ class Person {
 
 
   set firstName (value1) {
-    return this.#firstName = value1
+    this.#firstName = value1
   }
 
   get firstName () {
-    return person.#firstName;
+    return this.#firstName;
   }
 
 
   set lastName (value2) {
-    return this.#lastName = value2
+    this.#lastName = value2
   }
 
   get lastName () {
-    return person.#lastName;
+    return this.#lastName;
   }
 
   set age (value3) {
-    return this.#age = value3
+    this.#age = value3
   }
 
   get age () {
-    return person.#lastName;
+    return this.#age;
   }
 
   get fullName () {
-    return person.#firstName + " " + person.#lastName
+    return this.#firstName + " " + this.#lastName
   }
 }
 
