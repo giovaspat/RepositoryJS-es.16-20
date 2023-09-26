@@ -22,11 +22,11 @@ class AreaCalculator{
 
   static calculate (geometric) {
     if(geometric instanceof Square) {
-      console.log(geometric.side * geometric.side)
+      return(geometric.side * geometric.side)
    } else if(geometric instanceof Rectangle) {
-      console.log(geometric.width * geometric.height)
+      return(geometric.width * geometric.height)
    } else if(geometric instanceof Circle) {
-      console.log(geometric.radius * 3.14)}
+      return(geometric.radius ** 2 * Math.PI)}
 
     }
   }
